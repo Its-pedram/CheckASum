@@ -1,0 +1,3 @@
+# CoolCheckSums
+
+Documentation coming soon™
