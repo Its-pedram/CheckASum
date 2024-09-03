@@ -81,19 +81,19 @@ def handle_args():
         usage="ccs <file_path> [checksum] [-a <algorithm>] (Use -h for more detailed help)",
     )
     parser.add_argument(
-        "file_path", type=str, help="Path to the file you want to check the checksum of"
+        "file_path", type=str, help="path to the file you want to check the checksum of"
     )
     parser.add_argument(
         "checksum",
         type=str,
         nargs="?",
-        help="Checksum to compare",
+        help="checksum to compare",
     )
     parser.add_argument(
         "-a",
         "--algorithm",
         type=str,
-        help="Algorithm to use",
+        help="algorithm to use",
         choices=["md5", "sha1", "sha224", "sha256", "sha384", "sha512"],
         required=False,
     )
@@ -101,7 +101,7 @@ def handle_args():
         "-m",
         "--machine-readable",
         action="store_true",
-        help="Output in a machine-readable format",
+        help="output in a machine-readable format",
     )
     parser.add_argument(
         "--version",
@@ -144,4 +144,4 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n[!] Keyboard Interrupt Detected. Exiting...")
+        pass
